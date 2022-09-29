@@ -1,0 +1,40 @@
+
+/* HEADER */
+header{
+    border: 1px solid black;
+}
+
+/*NAVIGATION*/ 
+
+.nav-lista ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.nav-lista a{
+    background: rgb(194, 189, 189);;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+a:hover{
+    color: rgb(0, 255, 64);
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgb(0, 0, 255);
+}
+
+/* FOOTER */
+.fttext{
+    text-align: center;
+}

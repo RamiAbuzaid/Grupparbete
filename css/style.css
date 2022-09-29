@@ -57,7 +57,7 @@ a:active{
 .bild{
     grid-area: bild;
     min-height: 400px;
-    background-image:url(../bild/work.jpg);
+    background-image:url(../mockup/work.jpg);
     background-size: cover;
     background-position: center;
     padding: 7rem;

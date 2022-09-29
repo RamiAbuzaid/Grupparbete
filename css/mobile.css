@@ -1,11 +1,93 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: system-ui;
   box-sizing: border-box;
 }
 
-.mobilepic {
-  width: vw;
-  height: 70vh;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #cab49b;
+}
+
+.nav {
+  background: #344966;
+  padding: 1em;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 0em 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100vw;
   position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15em 0em 2em 0em;
+}
+
+h1 {
+  font-size: 18px;
+  color: aqua;
+  
+}
+
+span {
+  display: block;
+}
+
+h4 {
+  padding: 1em 0em;
+  color: darkslategray;
+}
+
+button {
+  height: 45px;
+  width: 120px;
+  margin: auto;
+  outline: none;
+  background: teal;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box {
+ display: flex;
+justify-content: space-evenly;
+border-radius: 10px;
+padding: ;
+
+}
+
+.box1, .box2, .box3 {
+width: 80px;
+background: #344966;
+color: #000;
+
+}
+
+
+@media screen and (max-width: 768px) {
 }

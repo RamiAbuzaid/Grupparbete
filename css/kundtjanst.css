@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    border: 0;
 }
 body {
     margin: auto 10%;
@@ -21,21 +20,20 @@ body {
 #topic-nav {
     grid-column: 1 / 3;
     display: flex;
-    background-color: yellowgreen;
+    background: url(../images/mobilepic.jpg);
+    background-size: 100%;
     justify-content: space-between;
+    height: 700px;
 }
 
 #topic-nav > div {
     background-color: var(--grey);
-    width: 200px;
+    width: 18%;
+    height: 100px;
     margin: 1%;
     padding: 3% 5%;
     text-align: center;
 }
-
-/* main {
-    grid-column: 1 / 6;
-} */
 
 .left-col {
     background-color: beige;
@@ -55,13 +53,19 @@ body {
 .flex-item {
     width: 100%;
     height: 100px;
-    border: 1px dashed #666666;
+    /* border: 1px dashed #666666; */
 }
 
 #contact-info {
+    text-align: center;
+    padding-top: 20%;
 }
 
 #map {
-    background-image: url("../images/location.png");
-    width: 50%;
+    background: url("../images/location.png");
+    background-repeat: no-repeat;
+    background-size: 440px 700px;
+    width: 440px;
+    height: 700px;
+    margin: 0 auto;
 }

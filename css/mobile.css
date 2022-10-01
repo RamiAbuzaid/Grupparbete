@@ -7,32 +7,12 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  background: #cab49b;
+  background: #fff;
 }
 
-.nav {
-  background: #344966;
-  padding: 1em;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-}
-
-li {
-  list-style: none;
-  padding: 0em 1em;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-img {
+.mobilepic {
   width: 100vw;
+  margin: 2em 0em;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -43,51 +23,103 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 15em 0em 2em 0em;
+  margin: 17em 0em 2em 0em;
 }
 
-h1 {
+.maintext {
   font-size: 18px;
-  color: aqua;
-  
+  color: rgb(18, 19, 19);
 }
 
 span {
   display: block;
 }
 
-h4 {
+.secondtext {
   padding: 1em 0em;
-  color: darkslategray;
+  color: rgb(7, 8, 12);
 }
 
-button {
+.clickhere {
   height: 45px;
   width: 120px;
   margin: auto;
   outline: none;
-  background: teal;
+  background: rgb(32, 49, 135);
   border: none;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 500;
+  color: #fff;
 }
 
 .box {
- display: flex;
-justify-content: space-evenly;
-border-radius: 10px;
-padding: ;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 0.3em 0em 0.3em;
 }
 
-.box1, .box2, .box3 {
-width: 80px;
-background: #344966;
-color: #000;
-
+.box1,
+.box2,
+.box3 {
+  background: #103d7b;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  width: 7em;
+  color: #fff;
 }
 
+.secondsection {
+  display: grid;
+  text-align: center;
+}
+
+.secondmobilepic {
+  width: 250px;
+  margin: 1em 3em;
+}
+
+.sectiontext,
+.emailinput,
+.subscribebutton {
+  margin: auto;
+}
+
+.sectiontext {
+  font-size: 22px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.emailinput {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 250px;
+  margin: 1em 4em;
+  padding: 1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 5px;
+  background: rgb(32, 49, 135);
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.subscribebutton {
+  border: none;
+  border-radius: 5px;
+  margin: 0.5em 2.5em;
+  padding: 1em;
+  width: 250px;
+  color: #000;
+  font-size: 22px;
+}
 
 @media screen and (max-width: 768px) {
+  
 }

@@ -13,6 +13,33 @@ body {
   background-repeat: no-repeat;
 }
 
+.nav-lista ul{
+  display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.nav-lista a{
+  background: rgb(194, 189, 189);
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+a:active{
+  color: rgb(0, 0, 255);
+}
+
 .mobilepic {
   max-width: 500px;
   position: absolute;
@@ -134,13 +161,17 @@ span {
   font-size: 22px;
   cursor: pointer;
 }
+.fttext{
+  text-align: center;
+}
 
 @media screen and (min-width: 768px) {
+  
   .container {
     margin: 0em 0em 1em 0em;
     padding: 5em;
   }
-
+  
   .secondtext {
     font-size: 25px;
   }

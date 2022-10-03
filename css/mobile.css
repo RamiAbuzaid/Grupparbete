@@ -13,24 +13,28 @@ body {
   background-repeat: no-repeat;
 }
 
-.nav-lista ul{
-  display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(5, 1fr);
 
+
+.nav-lista ul{
+  display: block;
+  grid-gap: 20px;
+  padding: 5px;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
 }
+
 .nav-lista a{
   background: rgb(194, 189, 189);
-  display: block;
+  display: grid;
   text-decoration: none;
   padding: 1rem;
   text-align: center;
   color:rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 1.1rem;
+  margin: 1em 0em;
 }
+
 a:hover{
   color: rgb(255, 255, 255);
   text-decoration: underline;
@@ -39,6 +43,7 @@ a:hover{
 a:active{
   color: rgb(0, 0, 255);
 }
+
 
 .mobilepic {
   max-width: 500px;
@@ -71,7 +76,7 @@ span {
 }
 
 .secondtext {
-  padding: 1em 0em;
+  padding: 2em 0em;
   color: rgb(7, 8, 12);
 }
 
@@ -175,6 +180,14 @@ span {
   .secondtext {
     font-size: 25px;
   }
+  .nav-lista ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+  }
 
   .clickhere {
     width: 250px;
@@ -186,7 +199,7 @@ span {
   .box {
     margin: 15em 0em 0em 0em;
   }
-
+  
   .box1,
   .box2,
   .box3 {
@@ -212,6 +225,13 @@ span {
 @media screen and (min-width: 920px) {
   .box {
     display: flex;
+  }
+  .nav-lista ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
   }
 
   .box1,

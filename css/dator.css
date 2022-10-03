@@ -1,5 +1,4 @@
 body {
-    font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -97,6 +96,11 @@ a:active{
 }
 
 @media screen and (max-width: 960px) {
+    .nav-lista ul{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     .images {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -124,6 +128,9 @@ a:active{
 }
 
 @media screen and (max-width: 761px) {
+    .nav-lista ul{
+        grid-template-columns: 1fr;
+    }
     .images {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);

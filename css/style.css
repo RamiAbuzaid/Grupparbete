@@ -91,3 +91,87 @@ a:active{
 .fttext{
     text-align: center;
 }
+
+/* Mindre desktopskärmar: mellan 1200px och 960px */
+
+@media only screen and (max-width:1200px ) {
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .main-content{
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    .nav-lista ul{
+        display: grid;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .boxer{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+/* Tablets såsom Ipad: mellan 960px och 768px */
+
+@media only screen and (max-width: 960px) {
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .main-content{
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    .nav-lista ul{
+        display: grid;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .boxer{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+/* Mobiltelefoner: mindre än 768px */
+
+@media only screen and (max-width: 768px) {
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .main-content{
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    .nav-lista ul{
+        display: grid;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: 1fr;
+    }
+
+    .boxer{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+      }
+}

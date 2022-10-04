@@ -11,39 +11,38 @@ body {
   background-image: url("../images/mobilepic.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-
-
-.nav-lista ul{
-  display: block;
-  grid-gap: 20px;
-  padding: 5px;
+.nav-lista ul {
+  display: grid;
+  padding: 0;
   list-style: none;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
 }
 
-.nav-lista a{
+.nav-lista a {
   background: rgb(194, 189, 189);
   display: grid;
   text-decoration: none;
   padding: 1rem;
   text-align: center;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 1.1rem;
   margin: 1em 0em;
+  list-style: none;
 }
 
-a:hover{
+a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
-a:active{
+a:active {
   color: rgb(0, 0, 255);
 }
-
 
 .mobilepic {
   max-width: 500px;
@@ -166,27 +165,31 @@ span {
   font-size: 22px;
   cursor: pointer;
 }
-.fttext{
+.fttext {
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  
+  body {
+    margin-left: unset;
+    margin-right: unset;
+  }
   .container {
     margin: 0em 0em 1em 0em;
     padding: 5em;
   }
-  
+
   .secondtext {
     font-size: 25px;
   }
-  .nav-lista ul{
+  .nav-lista ul {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-    
+  }
+  .nav-lista a {
+    margin: 1em 1em;
   }
 
   .clickhere {
@@ -199,7 +202,7 @@ span {
   .box {
     margin: 15em 0em 0em 0em;
   }
-  
+
   .box1,
   .box2,
   .box3 {
@@ -226,12 +229,15 @@ span {
   .box {
     display: flex;
   }
-  .nav-lista ul{
+  .nav-lista ul {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
+  }
+  .nav-lista a {
+    margin: 1em 1.5em;
+    width: 150px;
   }
 
   .box1,

@@ -50,18 +50,20 @@ a:hover, a:active{
 
 @media screen and (max-width: 960px) and (min-width: 768px)  {
 
-    .nav-lista {
-
-    }
-
 	.nav-lista ul {
+        
         display: flex;
         flex-flow: row wrap;
-        align-content: space-around;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .nav-lista li {
-        padding: 1rem;
+        width: 48%;
+    }
+
+    li:first-child {
+        width: 100%;
     }
 	
 }
@@ -71,17 +73,14 @@ a:hover, a:active{
 
 @media screen and (max-width: 768px) {
 
-    .nav-lista {
-        /* width: 100%; */
-    }
-    
-	.nav-lista ul {
+    .nav-lista ul {
+        
         display: flex;
         flex-flow: row wrap;
     }
+
     .nav-lista li {
         width: 100%;
     }
-
 }
 /* #endregion */

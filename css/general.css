@@ -1,4 +1,4 @@
-
+@import "variable.css";
 /* HEADER */
 
 
@@ -13,7 +13,7 @@
 }
 
 .nav-lista a{
-    background: rgb(194, 189, 189);;
+    background: var(--grey);
     display: block;
     text-decoration: none;
     padding: 1rem;
@@ -23,16 +23,65 @@
     font-size: 1.1rem;
 }
 
-a:hover{
-    color: rgb(0, 255, 64);
-    text-decoration: underline;
-}
-
-a:active{
-    color: rgb(0, 0, 255);
+a:hover, a:active{
+    color: inherit;
+    text-decoration: none;
 }
 
 /* FOOTER */
 .fttext{
     text-align: center;
 }
+
+
+/* #region - SMALLER DESKTOP MEDIA QUERY */
+
+@media screen and (max-width: 1200px) and (min-width: 960px)  {
+	
+    .nav-lista {
+        display: flex;
+    }
+
+}
+
+/* #endregion */
+
+/* #region - TABLET MEDIA QUERY */
+
+@media screen and (max-width: 960px) and (min-width: 768px)  {
+
+    .nav-lista {
+
+    }
+
+	.nav-lista ul {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-around;
+    }
+
+    .nav-lista li {
+        padding: 1rem;
+    }
+	
+}
+/* #endregion */
+
+/* #region - MOBILE MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+
+    .nav-lista {
+        /* width: 100%; */
+    }
+    
+	.nav-lista ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .nav-lista li {
+        width: 100%;
+    }
+
+}
+/* #endregion */

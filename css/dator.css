@@ -96,6 +96,32 @@ a:active{
     text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "image1 image2"
+        "image3 image4"
+        "image5 .";
+    }
+    .image1 {
+        grid-area: image1;
+    }
+    .image2 {
+        grid-area: image2;
+    }
+    .image3 {
+        grid-area: image3;
+    }
+    .image4 {
+        grid-area: image4;
+    }
+    .image5 {
+        grid-area: image5;
+    }
+
+}
+
 @media screen and (max-width: 960px) {
     .nav-lista ul{
         grid-template-columns: repeat(2, 1fr);
@@ -128,7 +154,7 @@ a:active{
 
 }
 
-@media screen and (max-width: 761px) {
+@media screen and (max-width: 768px) {
     .nav-lista ul{
         grid-template-columns: 1fr;
     }

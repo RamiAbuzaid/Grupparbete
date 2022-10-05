@@ -15,7 +15,7 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,50%);
 }
 
 #topic-nav {
@@ -83,14 +83,15 @@ h1 {
 
 .dropdown > h3 {
     padding-left: 1.7rem;
+    padding-top: 30px;
 }
 
 .dropdown-content {
-    display: block;
+    display: none;
     position:relative;
     top: -30px;
     left: 5%;
-    padding: 0;
+    padding: 5px;
     z-index: 1;
 }
 
@@ -163,7 +164,28 @@ h1 {
     #topic-nav > a:last-child {
         width: 100%;
     }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 100px;
+    }
     
+    .dropdown > h3 {
+        padding-left: 1.5rem;
+    }
+    
+    .dropdown-content {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 5%;
+        margin: 25px 10px 10px 10px;
+        padding: 5px;
+    }
+
 	
 }
 /* #endregion */
@@ -187,6 +209,31 @@ h1 {
         width: 100%;
         height: 60px;
         padding: 20px 0;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .dropdown > h3 {
+        padding-left: 1.5rem;
+    }
+    
+    .dropdown-content {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 5%;
+        margin: 25px 10px 10px 10px;
+        padding: 5px;
     }
 
     #map {

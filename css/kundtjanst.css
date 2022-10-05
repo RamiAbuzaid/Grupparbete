@@ -146,7 +146,6 @@ h1 {
 @media screen and (max-width: 960px) and (min-width: 768px)  {
 
     #topic-nav {
-        display: flex;
         flex-flow: row wrap;
         background: none;
         align-content:start;
@@ -166,9 +165,6 @@ h1 {
     }
 
     .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
         height: 100px;
         margin-bottom: 100px;
     }
@@ -181,9 +177,7 @@ h1 {
         display: block;
         position: absolute;
         top: 50px;
-        left: 5%;
         margin: 25px 10px 10px 10px;
-        padding: 5px;
     }
 
 	
@@ -199,7 +193,6 @@ h1 {
     }
 
 	#topic-nav {
-        display: flex;
         flex-flow: row wrap;
         background-image: none;
         height: 400px;
@@ -216,9 +209,6 @@ h1 {
     }
 
     .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
         height: 100px;
         margin-bottom: 100px;
     }
@@ -231,9 +221,7 @@ h1 {
         display: block;
         position: absolute;
         top: 50px;
-        left: 5%;
         margin: 25px 10px 10px 10px;
-        padding: 5px;
     }
 
     #map {

@@ -99,6 +99,11 @@ h1 {
     display: flex;
 }
 
+.last-col {
+    height: 500px;
+    margin-bottom: 50px;
+}
+
 #contact-info {
     text-align: center;
     padding-top: 5%;
@@ -226,7 +231,9 @@ h1 {
 
     #map {
         margin-top: 2rem;
-        background-position:top;
+        background-size: 100%;
+        width: 350px;
+        height: 500px;
     }
 }
 /* #endregion */

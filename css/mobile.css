@@ -31,7 +31,7 @@ body {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 1.1rem;
-  margin: 1em 0em;
+  margin: 0.5em 0em;
   list-style: none;
 }
 
@@ -96,6 +96,7 @@ span {
   display: grid;
   justify-content: center;
   margin: 5em 0em;
+  height: 300px;
 }
 
 .box1,
@@ -116,7 +117,7 @@ span {
   line-height: 20px;
   letter-spacing: 1px;
   max-width: 300px;
-  margin: 2em 0em;
+  margin: 1em 0em;
 }
 
 .secondsection {
